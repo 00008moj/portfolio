@@ -8,8 +8,16 @@ ScrollReveal().reveal("div", {
 
 ScrollReveal().reveal("#stacks p", {
     origin: "bottom",
-    distance: "10px",
-    duration: 500,
+    distance: "20px",
+    duration: 800,
+    interval: 100,
+    reset: true
+});
+
+ScrollReveal().reveal(".links a", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 800,
     interval: 100,
     reset: true
 });
