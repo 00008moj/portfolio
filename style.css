@@ -15,7 +15,7 @@
 body {
     background-color: var(--surface);
     margin: 10px 300px;
-    width: calc(100% - 40px);
+    width: 100%;
     max-width: 900px;
 }
 
@@ -210,22 +210,19 @@ img {
 
 @media (max-width: 1024px) {
     body {
-        width: 100%;
         margin: auto;
     }
-
 }
 
 @media (max-width: 600px) {
     body {
-        width: 100%;
         margin: auto;
     }
 
     .grid-container {   
         display: grid;
         grid-template-columns: 1fr;
-        gap: 0.5rem;
+        gap: 0rem;
     }
 
     #info {
