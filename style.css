@@ -210,34 +210,19 @@ img {
 
 @media (max-width: 1024px) {
     body {
-        width: calc(100% - 40px);
-        margin: 10px auto;
+        width: 100%;
+        margin: auto;
     }
 
-    #info {
-        align-items: center;
-        gap: 15px;
-    }
-
-    #stacks {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    #stacks p {
-        margin: 0;
-        padding: 5px 15px;
-    }
 }
 
 @media (max-width: 600px) {
     body {
-        width: calc(100% - 24px);
-        margin: 12px auto;
+        width: 100%;
+        margin: auto;
     }
 
-    .grid-container {
+    .grid-container {   
         display: grid;
         grid-template-columns: 1fr;
         gap: 0.5rem;
@@ -249,37 +234,7 @@ img {
         padding: 16px;
     }
 
-    img {
-        position: static;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .about,
-    .tech-stack,
-    .projects {
-        padding: 16px;
-        border-radius: 18px;
-    }
-
-    #name,
-    #about,
-    #tech-stack,
-    #recent-projects {
-        font-size: 1.25rem;
-    }
-
-    #description {
-        font-size: 0.9rem;
-        overflow-wrap: anywhere;
-    }
-
     #stacks {
-        gap: 10px;
-        font-size: 0.85rem;
-    }
-
-    #stacks p {
-        padding: 6px 12px;
+        gap: 0.5rem;
     }
 }
