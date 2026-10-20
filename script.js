@@ -22,6 +22,14 @@ ScrollReveal().reveal(".links a", {
     reset: true
 });
 
+ScrollReveal().reveal(".project-container", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 800,
+    interval: 100,
+    reset: true
+});
+
 const picture = document.querySelector("#picture");
 const sounds = document.querySelector("#sounds");
 

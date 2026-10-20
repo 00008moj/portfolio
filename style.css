@@ -195,6 +195,12 @@ img {
     border-radius: 25px;
 }
 
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+    gap: 10px;
+}
+
 .projects {
     background-color: var(--background);
     padding: 1.5rem;
@@ -215,11 +221,61 @@ img {
 }
 
 .project-container {
-    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
     font-family: "Chivo Mono";
     font-size: 1rem;
     font-weight: 400;
     color: var(--secondary-text);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-container:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+}
+
+.project-container a {
+    text-decoration: none;
+    color: var(--secondary-text);
+}
+
+.project-title {
+    font-family: "Instrument Sans";
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-bottom: 0.7rem;
+}
+
+.project-description {
+    font-size: 0.9rem;
+}
+
+.project-card {
+    padding: 0;
+    
+}
+
+.project-card h3 {
+    padding: 5px 15px;
+}
+
+.project-card p {
+    padding: 5px 15px;
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
 }
 
 @media (max-width: 1024px) {
@@ -231,6 +287,16 @@ img {
 @media (max-width: 600px) {
     body {
         margin: auto;
+    }
+
+    .project-list {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-container {
+        width: 100%;
     }
 
     .grid-container {
