@@ -14,29 +14,28 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="grid-container">
+        <div id="info" style="grid-area: info">
+            <img src="images/1x1.jpg" width="100px" id="picture">
+            <video src="audio/totoong tayo.mp4" id="sounds" hidden loop></video>
+            <div class="details">
+                <h1 id="name">Mojamer Licawat</h1>
 
-    <div id="info">
-        <img src="images/1x1.jpg" width="100px" id="picture">
-        <video src="audio/totoong tayo.mp4" id="sounds" hidden loop></video>
-        <div class="details">
-            <h1 id="name">Mojamer Licawat</h1>
+                <div class="location">
+                    <i class="iconoir-map-pin"></i>
+                    <p>Manila, Philippines</p>
+                </div>
 
-            <div class="location">
-                <i class="iconoir-map-pin"></i>
-                <p>Manila, Philippines</p>
-            </div>
-
-            <div class="links">
-                <a href="https://www.facebook.com/00008moj" target="_blank"><i class="iconoir-facebook-tag"></i></a>
-                <a href="https://www.instagram.com/00008moj" target="_blank"><i class="iconoir-instagram"></i></a>
-                <a href="https://www.tiktok.com/@00008moj" target="_blank"><i class="iconoir-tiktok"></i></a>
-                <a href="https://github.com/00008moj" target="_blank"><i class="iconoir-github"></i></a>
+                <div class="links">
+                    <a href="https://www.facebook.com/00008moj" target="_blank"><i class="iconoir-facebook-tag"></i></a>
+                    <a href="https://www.instagram.com/00008moj" target="_blank"><i class="iconoir-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@00008moj" target="_blank"><i class="iconoir-tiktok"></i></a>
+                    <a href="https://github.com/00008moj" target="_blank"><i class="iconoir-github"></i></a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="grid-container">
-        <div class="about">
+        <div class="about" style="grid-area: about">
             <div id="about">
                 <i class="iconoir-user"></i>
                 <p>About</p>
@@ -46,7 +45,7 @@
             </div>
         </div>
 
-        <div class="education">
+        <div class="education" style="grid-area: education">
             <div id="education">
                 <i class="iconoir-graduation-cap"></i>
                 <p>Education</p>
@@ -57,30 +56,30 @@
                 <p id="year">first-year</p>
             </div>
         </div>
-    </div>
 
-    <div class="tools">
-        <div id="tools">
-            <i class="iconoir-database"></i>
-            <p>Tools & Technologies</p>
+        <div class="tools" style="grid-area: tools">
+            <div id="tools">
+                <i class="iconoir-database"></i>
+                <p>Tools & Technologies</p>
+            </div>
+            <div id="stacks">
+                <p id="html">HTML</p>
+                <p id="css">CSS</p>
+                <p id="js">JavaScript</p>
+                <p id="c">C</p>
+                <p id="py">Python</p>
+                <p id="vscode">VS Code</p>
+            </div>
         </div>
-        <div id="stacks">
-            <p id="html">HTML</p>
-            <p id="css">CSS</p>
-            <p id="js">JavaScript</p>
-            <p id="c">C</p>
-            <p id="py">Python</p>
-            <p id="vscode">VS Code</p>
-        </div>
-    </div>
 
-    <div class="projects">
-        <div id="recent-projects">
-            <i class="iconoir-terminal"></i>
-            <p>Recent Projects</p>
-        </div>
-        <div class="project-container">
-            <p>Nothing to see here yet</p>
+        <div class="projects" style="grid-area: projects">
+            <div id="recent-projects">
+                <i class="iconoir-terminal"></i>
+                <p>Recent Projects</p>
+            </div>
+            <div class="project-container">
+                <p>Nothing to see here yet</p>
+            </div>
         </div>
     </div>
 </body>

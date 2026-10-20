@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +13,21 @@
 
 body {
     background-color: var(--surface);
-    margin: 10px 300px;
-    width: 100%;
+    width: calc(100% - 2rem);
     max-width: 900px;
+    margin: 2rem auto;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 0.1em;
+    grid-template-areas: 
+    "info info info"
+    "about about education"
+    "tools tools tools"
+    "projects projects projects";
 }
 
 #info {
@@ -217,13 +222,21 @@ img {
 @media (max-width: 600px) {
     body {
         margin: auto;
+        margin: 10px;
     }
 
-    .grid-container {   
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 0rem;
-    }
+        grid-auto-rows: auto;
+        gap: 0.1em;
+        grid-template-areas: 
+        "info"
+        "about"
+        "education"
+        "tools"
+        "projects";
+}
 
     #info {
         flex-direction: column;
