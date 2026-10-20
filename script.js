@@ -22,7 +22,7 @@ ScrollReveal().reveal(".links a", {
     reset: true
 });
 
-ScrollReveal().reveal(".project-container", {
+ScrollReveal().reveal(".project-container div", {
     origin: "bottom",
     distance: "20px",
     duration: 800,
