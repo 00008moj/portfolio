@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,9 +16,9 @@
 
 body {
     background-color: var(--surface);
-    width: 100%;
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .grid-container {
@@ -107,7 +108,7 @@ img {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-text);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5em;
 }
 
 #description {
@@ -230,7 +231,6 @@ img {
 @media (max-width: 600px) {
     body {
         margin: auto;
-        margin: 10px;
     }
 
     .grid-container {
