@@ -168,7 +168,7 @@ img {
 
 #stacks {
     display: flex;
-    gap: 25px;
+    gap: 10px;
     font-family: "Chivo Mono";
     font-size: 1rem;
     font-weight: 400;
