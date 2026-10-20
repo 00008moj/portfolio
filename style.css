@@ -5,10 +5,12 @@
 
 :root {
     --primary-text: #212326;
-    --secondary-text: #6f6f6f;
+    --secondary-text: #5b6270;
     --background: #f9fafb;
     --surface: #f2f4f7;
-    --background-text: #e8eaee;
+    --chip-bg: #e8eaee;
+    --border: rgba(0, 0, 0, 0.08);
+    --accent: #7c3aed;
 }
 
 body {
@@ -19,8 +21,9 @@ body {
 }
 
 .grid-container {
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
     grid-auto-rows: auto;
     column-gap: 0.5rem;
     grid-template-areas: 
@@ -34,7 +37,8 @@ body {
     display: flex;
     gap: 5px;
     background-color: var(--background);
-    border-radius: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
     padding: 20px;  
 }
 
@@ -67,7 +71,7 @@ body {
 img {
     position: relative;
     left: 1px;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 
 .links {
@@ -84,13 +88,14 @@ img {
 }
 
 .links a:hover {
-    color: var(--primary-text);
+    color: var(--accent);
 }
 
 .about {
     background-color: var(--background);
     padding: 1.5rem;
-    border-radius: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
     margin-top: 10px;
 }
 
@@ -116,7 +121,8 @@ img {
 .education {
     background-color: var(--background);
     padding: 1.5rem;
-    border-radius: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
     margin-top: 10px;
 }
 
@@ -156,7 +162,8 @@ img {
 .tools {
     background-color: var(--background);
     padding: 1.5rem;
-    border-radius: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
     margin-top: 10px;
 }
 
@@ -182,7 +189,7 @@ img {
 }
 
 #stacks p {
-    background-color: var(--background-text);
+    background-color: var(--chip-bg);
     padding: 5px 25px;
     border-radius: 25px;
 }
@@ -190,7 +197,8 @@ img {
 .projects {
     background-color: var(--background);
     padding: 1.5rem;
-    border-radius: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
     margin-top: 10px;
 }
 
@@ -236,7 +244,7 @@ img {
         "education"
         "tools"
         "projects";
-}
+    }
 
     #info {
         flex-direction: column;
