@@ -230,7 +230,6 @@ img {
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
-    width: 250px;
     height: 100%;
     overflow: hidden;
 }
@@ -242,6 +241,13 @@ img {
 .project-container a {
     text-decoration: none;
     color: var(--secondary-text);
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1rem;
 }
 
 .project-title {
