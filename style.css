@@ -147,11 +147,14 @@ img {
 }
 
 #program {
-    font-size: 1rem;
+    font-family: "Instrument Sans";
+    color: var(--primary-text);
+    font-weight: 600;
+    font-size: 1.175rem;
 }
 
 #school {
-    font-size: 0.7rem;
+    font-size: 0.925rem;
     margin-top: 15px;
 }
 
