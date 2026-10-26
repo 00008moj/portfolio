@@ -1,41 +1,50 @@
 const picture = document.querySelector("#picture");
 const darkModeButton = document.querySelector("#darkModeButton");
 
-darkModeButton.onclick = () => {
+function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
-    darkModeButton.innerHTML = document.body.classList.contains("dark-mode") ? '<i class="iconoir-sun-light"></i>' : '<i class="iconoir-half-moon"></i>';
-    darkModeButton.querySelector("i").style.color = document.body.classList.contains("dark-mode") ? "#f2f4f7" : "#212326";
-    picture.src = document.body.classList.contains("dark-mode") ? "images/1x1sg.jpg" : "images/1x1.jpg";
+
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeButton.innerHTML = '<i class="iconoir-sun-light"></i>';
+        darkModeButton.querySelector("i").style.color = "#f4f4f5";
+        picture.src = "images/1x1sg.jpg";
+    } else {
+        darkModeButton.innerHTML = '<i class="iconoir-half-moon"></i>';
+        darkModeButton.querySelector("i").style.color = "#0a0a0a";
+        picture.src = "images/1x1.jpg";
+    }
+
 }
 
 ScrollReveal().reveal(".info, .about, .education, .tools, .projects", {
-    delay: 200,
     distance: "20px",
     origin: "bottom",
-    duration: 800,
-    reset: true
+    duration: 600,
+    delay: 100,
+    reset: false
 });
 
 ScrollReveal().reveal(".links a", {
     origin: "bottom",
     distance: "20px",
-    duration: 800,
+    duration: 500,
     interval: 100,
-    reset: true
+    reset: false
 });
 
 ScrollReveal().reveal("#stacks p", {
     origin: "bottom",
     distance: "20px",
-    duration: 800,
+    duration: 500,
     interval: 100,
-    reset: true
+    reset: false
 });
 
-ScrollReveal().reveal(".project-container div", {
+ScrollReveal().reveal(".project-container", {
     origin: "bottom",
     distance: "20px",
-    duration: 800,
-    interval: 100,
-    reset: true
+    duration: 600,
+    delay: 100,
+    interval: 150,
+    reset: false
 });
