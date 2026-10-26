@@ -1,5 +1,12 @@
 const picture = document.querySelector("#picture");
 const sounds = document.querySelector("#sounds");
+const darkModeButton = document.querySelector("#darkModeButton");
+
+darkModeButton.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    darkModeButton.innerHTML = document.body.classList.contains("dark-mode") ? '<i class="iconoir-sun-light"></i>' : '<i class="iconoir-half-moon"></i>';
+    darkModeButton.querySelector("i").style.color = document.body.classList.contains("dark-mode") ? "#f2f4f7" : "#212326";
+}
 
 picture.addEventListener("mouseover", event => {
     event.target.src = "images/1x1sg.jpg";
