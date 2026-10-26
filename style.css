@@ -113,6 +113,7 @@ img {
 
 .links a:hover {
     color: var(--accent);
+    transform: scale(1.03);
 }
 
 .about {
