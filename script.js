@@ -40,7 +40,7 @@ ScrollReveal().reveal("#stacks p", {
     reset: false
 });
 
-ScrollReveal().reveal(".project-container", {
+ScrollReveal().reveal(".project-card", {
     origin: "bottom",
     distance: "20px",
     duration: 600,
