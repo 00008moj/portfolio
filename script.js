@@ -40,11 +40,11 @@ ScrollReveal().reveal("#stacks p", {
     reset: false
 });
 
-ScrollReveal().reveal(".project-list", {
+ScrollReveal().reveal(".project-reveal", {
     origin: "bottom",
     distance: "20px",
     duration: 600,
-    delay: 100,
     interval: 150,
-    reset: false
+    reset: false,
+    viewFactor: 0.2
 });
