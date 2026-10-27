@@ -45,6 +45,5 @@ ScrollReveal().reveal(".project-reveal", {
     distance: "20px",
     duration: 600,
     interval: 150,
-    reset: false,
-    viewFactor: 0.2
+    reset: false
 });
