@@ -381,6 +381,7 @@ img {
 
     .view-all {
         width: 100%;
+        max-width: none;
     }
 }
 
