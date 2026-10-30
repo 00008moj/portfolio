@@ -378,6 +378,10 @@ img {
     #stacks {
         gap: 0.5rem;
     }
+
+    .view-all {
+        width: 100%;
+    }
 }
 
 @view-transition {
