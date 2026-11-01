@@ -5,123 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mojamer Licawat</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist+Pixel&family=Geist:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
-    <script src="https://unpkg.com/scrollreveal" defer></script>    
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="info" style="grid-area: info">
-            <img src="images/1x1.jpg" width="150px" id="picture">
-            <div class="details">
-                <h1 id="name">Mojamer Licawat</h1>
-                <button class="dark-mode-button" id="darkModeButton"><i class="iconoir-half-moon"></i></button>
-                
-                <div class="location">
-                    <i class="iconoir-map-pin"></i>
-                    <p>Manila, Philippines</p>
-                </div>
-                <div class="hero-description">
-                    <p>Aspiring Full-Stack Developer</p> 
-                </div>
-                <div class="buttons">
-                    <button class="primary-button" onclick="window.location.href='projects.html'">View Projects →</button>
-                    <button class="secondary-button" onclick="window.location.href='#about'">About Me</button>
-                </div>
+    <header id="home">
+        <nav>
+            <h3>Mojamer Licawat</h3>
+            <div class="navigation">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#tools">tools</a>
+                <a href="#projects">projects</a>
+            </div>
+            <button class="dark-mode-button">
+                <i class="iconoir-half-moon"></i>
+                <i class="iconoir-sun-light"></i>
+            </button>
+        </nav>
+        <div class="text-content">
+            <h1 class="hero-name">Hi, I'm Mojamer Licawat</h1>
+            <h3 class="hero-description">Aspiring Full-Stack Developer</h3>
+            <div class="hero-actions">
+                <button class="primary-button" onclick="window.location.href='#projects'">View Projects ↗</button>
+                <button class="secondary-button" onclick="window.location.href='#about'">About Me</button>
             </div>
         </div>
-        <div class="about" style="grid-area: about">
-            <div id="about">
-                <i class="iconoir-user"></i>
-                <p>About</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="section-labels">
+                <p>about me</p>
+                <p>introduction</p>
             </div>
-            <div id="description">
-                <p>I am a first-year Computer Science student with an interest in programming and software development. I enjoy exploring new technologies, learning how things work, and applying what I learn through personal small projects.</p>
-            </div>
-        </div>
-        <div class="education" style="grid-area: education">
-            <div id="education">
-                <i class="iconoir-open-book"></i>
-                <p>Education</p>
-            </div>
-            <div id="school-info">
-                <p id="program">Bachelor of Science in Computer Science</p>
-                <p id="school">Technological University of the Philippines</p>
-                <p id="year">first-year</p>
-            </div>
-        </div>
-        <div class="tools" style="grid-area: tools">
-            <div id="tools">
-                <i class="iconoir-database"></i>
-                <p>Tools & Technologies</p>
-            </div>
-            <div id="stacks">
-                <p id="html">HTML</p>
-                <p id="css">CSS</p>
-                <p id="js">JavaScript</p>
-                <p id="c">C</p>
-                <p id="py">Python</p>
-                <p id="vscode">VS Code</p>
-            </div>
-        </div>
-        <div class="social-links" style="grid-area: socials;">
-            <div id="social-links">
-                <i class="iconoir-link"></i>
-                <p>Social Links</p>
-            </div>
-            <div class="links">
-                <a href="https://www.facebook.com/00008moj" target="_blank">facebook ↗</a>
-                <a href="https://www.instagram.com/00008moj/" target="_blank">instagram ↗</a>
-                <a href="https://www.tiktok.com/@00008moj" target="_blank">tiktok ↗</a>
-                <a href="https://github.com/00008moj" target="_blank">github ↗</a>
-            </div>
-        </div>
-        <div class="projects" style="grid-area: projects">
-            <div id="recent-projects">
-                <i class="iconoir-folder"></i>
-                <p>Recent Projects</p>
-            </div>
-            <div class="project-list">
-                <div class="project-reveal">
-                    <div class="project-container">
-                        <a href="https://rentadriver.vercel.app/" target="_blank">
-                            <div class="project-card">
-                                <img src="project/rentadriver.png" width="100px">
-                                <h3 class="project-title">RentADriver</h3>
-                                <p class="project-description">A fictional Rent A Driver website created for practice purposes. It is a front-end project and does not provide real booking services</p>
-                            </div>
-                        </a>
+            <div class="about-info">
+                <div class="about-me-text">
+                    <h3>Who am I</h3>
+                    <p>I am a first-year Computer Science student with an interest in programming<br class="mobile-break"> and software development. I enjoy exploring new technologies, learning how<br class="mobile-break"> things work, and applying what I learn through personal small projects.</p>
+                    <div class="links">
+                        <a href="https://www.facebook.com/00008moj" target="_blank">facebook ↗</a>
+                        <a href="https://www.instagram.com/00008moj/" target="_blank">instagram ↗</a>
+                        <a href="https://www.tiktok.com/@00008moj" target="_blank">tiktok ↗</a>
+                        <a href="https://github.com/00008moj" target="_blank">github ↗</a>
                     </div>
                 </div>
-                <div class="project-reveal">
-                    <div class="project-container">
-                        <a href="https://pokemon-search-nu-woad.vercel.app/" target="_blank">
-                            <div class="project-card">
-                                <img src="project/pokemon.png" width="100px">
-                                <h3 class="project-title">Pokemon Search</h3>
-                                <p class="project-description">Search any Pokémon and view its sprite, ID, type, height, weight, and base experience. Hover over or click the sprite to reveal its shiny form</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-reveal">
-                    <div class="project-container">
-                        <a href="https://sinong-unggoy.vercel.app/" target="_blank">
-                            <div class="project-card">
-                                <img src="project/su.png" width="100px">
-                                <h3 class="project-title">Sinong Unggoy?</h3>
-                                <p class="project-description">It is a Filipino-inspired Rock, Paper, Scissors game named after the Pinoy chant "Jack-en-poy, hali-hali-hoy, sinumang matalo, siya ang unggoy"</p>
-                            </div>
-                        </a>
-                    </div>
+                <div class="about-me-education">
+                    <p>EDUCATION</p>
+                    <h1>Bachelor of Science in Computer Science</h1>
+                    <p>TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES</p>
+                    <p class="year">first-year</p>
                 </div>
             </div>
-            <button onclick="window.location.href='projects.html'" class="view-all">View All Projects</button>
-        </div>
-    </div>
+        </section>
+
+        <section id="tools">
+            <div class="section-labels">
+                <p>tools and technologies</p>
+                <p>tools that i use</p>
+            </div>
+            <div class="stack">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>C</p>
+                <p>Python</p>
+                <p>VS Code</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-labels">
+                <p>projects</p>
+                <a href="projects.html" class="view-all">view all →</a>
+            </div>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="images/rentadriver.png">
+                    <h1>RentADriver</h1>
+                    <p>A fictional Rent A Driver website created for practice purposes. It is a front-end project and does not provide real booking services</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/pokemon-search.png">
+                    <h1>Pokemon Search</h1>
+                    <p>Search any Pokemon and view its sprite, ID, type, height, weight, and base experience. Hover over or click the sprite to reveal its shiny form</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/su.png">
+                    <h1>Sinong Unggoy?</h1>
+                    <p>It is a Filipino-inspired Rock, Paper, Scissors game named after the Pinoy chant "Jack-en-poy, hali-hali-hoy, sinumang matalo, siya ang unggoy"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-me">
+            <div class="section-labels">
+                <p>contact</p>
+                <p>get in touch</p>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="">
+                <input type="hidden" name="subject" value="Portfolio Contact">
+                <div class="contact-form">
+                    <h1>Send an Email directly</h1>
+                    <div class="contactName">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Juan Dela Cruz">
+                    </div>
+
+                    <div class="contactEmail">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="juandelacruz@example.com">
+                    </div>
+
+                    <div class="contactMessage">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="primary-button">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2026 Mojamer Licawat. All rights reserved.</span>   
+    </footer>
 </body>
 </html>
