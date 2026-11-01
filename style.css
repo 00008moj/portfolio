@@ -165,7 +165,6 @@ nav a:hover {
 .hero-actions {
     display: flex;
     gap: 0.5rem;
-    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
