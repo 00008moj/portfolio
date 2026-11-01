@@ -26,7 +26,7 @@
     right: 20px;
     background-color: var(--surface);
     border-radius: 50%;
-    padding: 0.75rem;
+    padding: 0;
     border: none;
     cursor: pointer;
 }
@@ -48,6 +48,15 @@
     --chip-bg: #1e1e22;
     --border: #2a2a30;
     --accent: #3a3a42;
+    --secondary-button-bg: #27272a;
+    --secondary-button-text: #e4e4e7;
+    --secondary-button-hover: #323236;
+    --secondary-button-active: #3f3f46;
+    --secondary-button-border: #3f3f46;
+}
+
+.dark-mode img {
+    opacity: 0.9;
 }
 
 body {
@@ -327,7 +336,6 @@ img {
     background-color: var(--secondary-button-bg);
     color: var(--secondary-button-text);
     padding: 0.75rem 1.5rem;
-    border: none;
     border-radius: 0.5rem;
     cursor: pointer;
     margin-top: 1rem;
