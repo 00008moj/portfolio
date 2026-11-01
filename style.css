@@ -472,6 +472,11 @@ body {
         gap: 0.5rem;
     }
 
+    .links {
+        flex-direction: row;
+        font-size: 0.675rem;
+    }
+
     .view-all {
         width: 100%;
         max-width: none;
