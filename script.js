@@ -23,3 +23,7 @@ darkModeButton.addEventListener("click", () => {
     darkmode = localStorage.getItem("darkmode");
     darkmode !== "active" ? enableDarkMode() : disableDarkMode();
 });
+
+window.addEventListener("pageshow", () => {
+    document.querySelector("form").reset();
+});
