@@ -295,6 +295,11 @@ nav a:hover {
     gap: 1rem;
 }
 
+.project-container a {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
 .project-card {
     background-color: var(--surface);
     border: 1px solid var(--border);
@@ -315,14 +320,14 @@ nav a:hover {
     font-family: "Geist Pixel";
     font-weight: 400;
     font-size: 1rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem 0;
 }
 
 .project-card p {
     color: var(--secondary-text);
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -492,6 +497,11 @@ footer span {
     section {
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+
+    .section-labels p,
+    .section-labels a {
+        font-size: 0.7rem;
     }
 
     .about-info {
