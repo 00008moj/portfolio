@@ -1,22 +1,18 @@
-let darkmode = localStorage.getItem("dark-mode");
+let darkmode = localStorage.getItem("darkmode");
 const darkModeButton = document.querySelector(".dark-mode-button");
-const moonIcon = darkModeButton.querySelector(".iconoir-half-moon");
-const sunIcon = darkModeButton.querySelector(".iconoir-sun-light");
 
 function enableDarkMode() {
     document.body.classList.add("dark-mode");
     localStorage.setItem("darkmode", "active");
     darkModeButton.style.color = "#f4f4f5";
-    moonIcon.style.display = "none";
-    sunIcon.style.display = "block"
+    darkModeButton.innerHTML = '<i class="iconoir-sun-light"></i>';
 }
 
 function disableDarkMode() {
     document.body.classList.remove("dark-mode");
     localStorage.setItem("darkmode", null);
     darkModeButton.style.color = "#0a0a0a";
-    moonIcon.style.display = "block";
-    sunIcon.style.display = "none";
+    darkModeButton.innerHTML = '<i class="iconoir-half-moon"></i>';
 }
 
 if (darkmode === "active") {
