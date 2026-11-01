@@ -6,7 +6,7 @@ function enableDarkMode() {
     localStorage.setItem("darkmode", "active");
 }
 
-const disableDarkMode() {
+function disableDarkMode() {
     document.body.classList.remove("dark.mode");
     localStorage.setItem("darkmode", null);
 }
@@ -15,7 +15,7 @@ if (darkmode === "active") {
     enableDarkMode();
 }
 
-darkModeButton.addEventListener("click" () => {
+darkModeButton.addEventListener("click", () => {
     darkmode = localStorage.getItem("darkmode");
     darkmode !== "active" ? enableDarkMode() : disableDarkMode();
 });
