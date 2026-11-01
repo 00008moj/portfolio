@@ -19,10 +19,9 @@ function disableDarkMode() {
     darkModeButton.innerHTML = '<i class="iconoir-half-moon"></i>';
     darkModeButton.querySelector("i").style.color = "#0a0a0a";
     picture.src = "images/1x1.jpg";
-    
+
     localStorage.setItem("dark-mode", null);
 }
-
 
 if (darkmode === "active") {
     enableDarkMode();
