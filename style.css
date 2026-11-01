@@ -131,8 +131,6 @@ nav a:hover {
 }
 
 .dark-mode-button {
-    height: 50px;
-    width: 50px;
     padding: 0;
     border-radius: 50%;
     border: none;
@@ -140,8 +138,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    top: 20px;
-    right: 20px;
 }
 
 .text-content {
