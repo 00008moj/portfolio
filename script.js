@@ -35,7 +35,7 @@ darkModeButton.addEventListener("click", () => {
     darkmode = localStorage.getItem("dark-mode");
 })
 
-ScrollReveal().reveal(".info, .about, .education, .tools, .projects", {
+ScrollReveal().reveal(".info, .about, .education, .tools, .projects, .social-links", {
     distance: "20px",
     origin: "bottom",
     duration: 600,
