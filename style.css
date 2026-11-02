@@ -132,10 +132,6 @@ nav a:hover {
     color: var(--primary-text);
 }
 
-.navigation {
-    display: flex;
-}
-
 .sidebar-active {
     display: none;
 }
@@ -146,18 +142,17 @@ nav a:hover {
 }
 
 .dark-mode-button {
-    padding: 0;
-    border-radius: 50%;
+    font-family: "Geist Pixel";
+    color: var(--secondary-text);
+    text-decoration: none;
     border: none;
-    background-color: var(--background);
-    justify-content: center;
-    align-items: center;
+    background-color: transparent;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 .dark-mode-button:hover {
-    transform: rotate(25deg);
+    color: var(--primary-text);
 }
 
 .text-content {
@@ -515,10 +510,6 @@ footer span {
     .navigation a {
         height: auto;
         width: 100%;
-    }
-
-    .navigation button {
-        padding-left: 0.5rem;
     }
 
     .open-sidebar,
