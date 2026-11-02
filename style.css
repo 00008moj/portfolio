@@ -132,6 +132,19 @@ nav a:hover {
     color: var(--primary-text);
 }
 
+.navigation {
+    display: flex;
+}
+
+.sidebar-active {
+    display: none;
+}
+
+.open-sidebar,
+.close-sidebar {
+    display: none;
+}
+
 .dark-mode-button {
     padding: 0;
     border-radius: 50%;
@@ -481,8 +494,41 @@ footer span {
         font-size: 1rem;
     }
 
-    nav a {
-        display: none;
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 300px;
+        background-color: var(--background);
+        border-left: 1px solid var(--border);
+        gap: 1rem;
+        padding: 1.5rem;
+        transition: 0.2s ease-in-out;
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+
+    .navigation a {
+        height: auto;
+        width: 100%;
+    }
+
+    .navigation button {
+        padding-left: 0.5rem;
+    }
+
+    .open-sidebar,
+    .close-sidebar {
+        display: block;
+    }
+
+    .sidebar-active:checked ~ .navigation {
+        transform: translateX(0);
+        visibility: visible;
     }
 
     .mobile-break {
