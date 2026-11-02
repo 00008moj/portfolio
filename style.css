@@ -113,6 +113,7 @@ nav {
     background-color: var(--background);
     padding: 0.75rem 1.5rem;
     border-bottom: 1px solid var(--border);
+    transition: 0.2s;
 }
 
 nav h3 {

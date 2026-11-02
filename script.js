@@ -24,3 +24,43 @@ window.addEventListener("pageshow", () => {
     document.querySelector("form").reset();
 
 });
+
+ScrollReveal().reveal(".text-content, #about, #tools, #projects, #contact-me, footer", {
+    distance: "20px",
+    origin: "bottom",
+    duration: 650,
+    delay: 100,
+    reset: false
+});
+
+ScrollReveal().reveal(".hero-name, .hero-description, .hero-actions button", {
+    distance: "20px",
+    origin: "bottom",
+    duration: 650,
+    interval: 100,
+    reset: false
+});
+
+ScrollReveal().reveal(".links a", {
+    distance: "20px",
+    origin: "bottom",
+    duration: 650,
+    interval: 100,
+    reset: false
+});
+
+ScrollReveal().reveal(".stack p", {
+    distance: "20px",
+    origin: "bottom",
+    duration: 650,
+    interval: 100,
+    reset: false
+});
+
+ScrollReveal().reveal(".project-reveal", {
+    distance: "20px",
+    origin: "bottom",
+    duration: 650,
+    interval: 100,
+    reset: false
+});
