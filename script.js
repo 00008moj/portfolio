@@ -37,5 +37,4 @@ window.addEventListener("pageshow", () => {
         window.hcaptcha.reset();
     }
 
-
 });
