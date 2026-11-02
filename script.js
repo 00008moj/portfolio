@@ -25,16 +25,6 @@ darkModeButton.addEventListener("click", () => {
 });
 
 window.addEventListener("pageshow", () => {
-    const form = document.querySelector("form");
-
-    if (form) {
-        form.reset();
-    }
-
-    const captcha = document.querySelector(".h-captcha");
-
-    if (captcha && window.hcaptcha) {
-        window.hcaptcha.reset();
-    }
+    document.querySelector("form").reset();
 
 });
