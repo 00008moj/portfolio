@@ -527,7 +527,10 @@ footer span {
     }
 
     .navigation button {
+        display: flex;
+        justify-content: flex-start;
         padding: 1.5rem;
+        width: 100%;
     }
 
     .open-sidebar {

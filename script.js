@@ -10,7 +10,7 @@ darkModeButton.onclick = () => {
     }
 }
 
-if (localStorage.getItem(("theme") === "dark")) {
+if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
 }
 
