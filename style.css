@@ -124,7 +124,13 @@ nav {
 
 nav h3 {
     font-family: "Geist Pixel";
+    font-size: 1rem;
     font-weight: 400;
+    color: var(--primary-text);
+}
+
+nav h3:hover {
+    color: var(--secondary-text);
 }
 
 nav a {
