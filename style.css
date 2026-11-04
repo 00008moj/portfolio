@@ -526,6 +526,10 @@ footer span {
         padding: 1.5rem;
     }
 
+    .navigation button {
+        padding: 1.5rem;
+    }
+
     .open-sidebar {
         display: flex;
         align-items: center;
