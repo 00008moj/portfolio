@@ -29,7 +29,6 @@
     --input-placeholder: #737373;
     --input-border: #e9e9e9;
     --input-focus-border: #0a0a0a;
-    transition: 0.2s;
 }
 
 .dark-mode {
@@ -55,7 +54,6 @@
     --input-placeholder: #737373;
     --input-border: #333333;
     --input-focus-border: #a3a3a3;
-    transition: 0.2s;
 }
 
 ::selection {
@@ -74,6 +72,14 @@ body {
     padding: 7rem 300px 0;
     background-color: var(--background);
     color: var(--primary-text);
+}
+
+body,
+body * {
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
 }
 
 header {
@@ -150,6 +156,7 @@ nav a:hover {
     background-color: transparent;
     font-size: 1rem;
     cursor: pointer;
+    margin: 0 0.5rem;
 }
 
 .dark-mode-button:hover {

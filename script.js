@@ -1,24 +1,18 @@
-let darkmode = localStorage.getItem("darkmode");
 const darkModeButton = document.querySelector(".dark-mode-button");
 
-function enableDarkMode() {
+darkModeButton.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+if (localStorage.getItem(("theme") === "dark")) {
     document.body.classList.add("dark-mode");
-    localStorage.setItem("darkmode", "active");
 }
-
-function disableDarkMode() {
-    document.body.classList.remove("dark-mode");
-    localStorage.setItem("darkmode", null);
-}
-
-if (darkmode === "active") {
-    enableDarkMode();
-}
-
-darkModeButton.addEventListener("click", () => {
-    darkmode = localStorage.getItem("darkmode");
-    darkmode !== "active" ? enableDarkMode() : disableDarkMode();
-});
 
 window.addEventListener("pageshow", () => {
     document.querySelector("form").reset();
