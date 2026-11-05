@@ -22,39 +22,49 @@ window.addEventListener("pageshow", () => {
 ScrollReveal().reveal(".text-content, #about, #tools, #projects, #contact-me, footer", {
     distance: "20px",
     origin: "bottom",
-    duration: 650,
-    delay: 100,
-    reset: false
+    duration: 450,
+    delay: 0,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.15
 });
 
 ScrollReveal().reveal(".hero-name, .hero-description, .hero-actions button", {
     distance: "20px",
     origin: "bottom",
-    duration: 650,
-    interval: 100,
+    duration: 450,
+    delay: 0,
+    interval: 80,
+    easing: "ease-out",
     reset: false
 });
 
 ScrollReveal().reveal(".links a", {
     distance: "20px",
     origin: "bottom",
-    duration: 650,
-    interval: 100,
+    duration: 450,
+    delay: 0,
+    interval: 80,
+    easing: "ease-out",
     reset: false
 });
 
 ScrollReveal().reveal(".stack p", {
     distance: "20px",
     origin: "bottom",
-    duration: 650,
-    interval: 100,
+    duration: 450,
+    delay: 0,
+    interval: 80,
+    easing: "ease-out",
     reset: false
 });
 
 ScrollReveal().reveal(".project-reveal", {
     distance: "20px",
     origin: "bottom",
-    duration: 650,
-    interval: 100,
+    duration: 450,
+    delay: 0,
+    interval: 80,
+    easing: "ease-out",
     reset: false
 });
