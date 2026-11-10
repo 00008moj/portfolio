@@ -113,6 +113,12 @@ document.querySelector(".close-dialog").addEventListener("click", () => {
     dialog.close();
 });
 
+dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) {
+        dialog.close();
+    }
+});
+
 function playSong() {
     if (audio.paused) {
         if (!audio.src) {
