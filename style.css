@@ -68,7 +68,6 @@ html {
 
 body {
     min-height: 100vh;
-    padding-top: 4rem;
     padding: 7rem 300px 0;
     background-color: var(--background);
     color: var(--primary-text);
@@ -117,7 +116,7 @@ nav {
     align-items: center;
     color: var(--primary-text);
     background-color: var(--background);
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 0.875rem;
     border-bottom: 1px solid var(--border);
     transition: 0.2s;
 }
@@ -380,10 +379,42 @@ nav a:hover {
     display: block;
 }
 
-form {
+.contact-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-text p {
+    gap: 1rem;
+    color: var(--secondary-text);
+    line-height: 1.4rem;
+}
+
+.prefer-email {
+    color: var(--secondary-text);
+}
+
+.contact-kineme {
+    margin-top: 1rem;
+}
+
+.prefer-email {
+    margin-top: 2rem;
+}
+
+.prefer-email a {
+    text-decoration: none;
+    color: var(--primary-text);
+    font-family: "Geist Mono";
+}
+
+form {
+    width: 100%;
+    max-width: 625px;
 }
 
 .contact-form {
@@ -395,15 +426,15 @@ form {
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 0.5rem;
-    width: 100%;
 }
 
 .contact-form h1 {
     font-family: "Geist Pixel";
+    font-size: 1.5rem;
     text-align: left;
     width: 100%;
-    margin-top: 1.3rem;
-    margin-left: 3rem;
+    padding: 1.3rem 1.5rem 0;
+    margin: 0;
 }
 
 .contact-form div {
@@ -415,9 +446,9 @@ form {
 }
 
 .contact-form label {
-    font-family: Geist;
-    font-size: 0.875rem;
-    color: var(--primary-text);
+    font-family: "Geist Mono";
+    font-size: 0.675rem;
+    color: var(--secondary-text);
 }
 
 .contact-form input,
@@ -469,7 +500,7 @@ footer span {
 
 @media (max-width: 1024px) {
     body {
-        padding: 8rem 5rem 3rem;
+        padding: 8rem 5rem 0;
     }
 
     .hero-name {
@@ -496,7 +527,7 @@ footer span {
 
 @media (max-width: 600px) {
     body {
-        padding: 7rem 1.25rem 2rem;
+        padding: 7rem 1.25rem 0;
     }
 
     nav h3 {
@@ -609,6 +640,10 @@ footer span {
 
     .project-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
     }
 
     .contact-form h1 {
