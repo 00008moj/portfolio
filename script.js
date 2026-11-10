@@ -69,6 +69,16 @@ ScrollReveal().reveal(".project-reveal", {
     reset: false
 });
 
+ScrollReveal().reveal(".contact-text h3, .contact-kineme, .prefer-email, form", {
+    distance: "20px",
+    origin: "bottom",
+    duration: 450,
+    delay: 0,
+    interval: 80,
+    easing: "ease-out",
+    reset: false
+});
+
 const dialog = document.querySelector(".music-dialog");
 const songs = [
     {

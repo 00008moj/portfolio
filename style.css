@@ -511,49 +511,43 @@ footer span {
     padding: 0.75rem 0.875rem;
     cursor: pointer;
     box-shadow: 
-        0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-        0px 6px 10px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
 }
 
 .music-button:hover {
-    box-shadow: 
-        0px 5px 5px -3px rgba(0, 0, 0, 0.2),
-        0px 8px 10px 1px rgba(0, 0, 0, 0.14),
-        0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 6px 10px -2px rgba(0, 0, 0, 0.12),
+        0 3px 6px -3px rgba(0, 0, 0, 0.12);
     transform: translateY(-2px);
 }
 
 .music-button:active {
-    box-shadow: 
-        0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-        0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 2px 4px -1px rgba(0, 0, 0, 0.08),
+        0 1px 2px -2px rgba(0, 0, 0, 0.08);
     transform: translateY(0);
 }
 
 .dark-mode .music-button {
     background-color: var(--surface);
     color: var(--primary-text);
-
     box-shadow:
-        0px 3px 5px -1px rgba(0, 0, 0, 0.5),
-        0px 6px 10px 0px rgba(0, 0, 0, 0.3),
-        0px 1px 18px 0px rgba(0, 0, 0, 0.25);
+        0 4px 6px -1px rgba(0, 0, 0, 0.3),
+        0 2px 4px -2px rgba(0, 0, 0, 0.3);
 }
 
 .dark-mode .music-button:hover {
     box-shadow:
-        0px 5px 5px -3px rgba(0, 0, 0, 0.6),
-        0px 8px 10px 1px rgba(0, 0, 0, 0.4),
-        0px 3px 14px 2px rgba(0, 0, 0, 0.3);
+        0 6px 10px -2px rgba(0, 0, 0, 0.4),
+        0 3px 6px -3px rgba(0, 0, 0, 0.4);
 }
 
 .dark-mode .music-button:active {
     box-shadow:
-        0px 2px 4px -1px rgba(0, 0, 0, 0.5),
-        0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        0 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0 1px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .music-button svg {
