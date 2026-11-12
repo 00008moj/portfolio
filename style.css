@@ -559,7 +559,7 @@ footer span {
     bottom: 5rem;
     left: auto;
     top: auto;
-    width: min(350px, calc(100% - 2rem));
+    width: min(350px, 95%);
     padding: min(1rem, 6%);
     border: none;
     border-radius: 1rem;
@@ -660,7 +660,7 @@ footer span {
     }
 
     nav h3 {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .navigation {
@@ -675,7 +675,7 @@ footer span {
         width: 70%;
         background-color: var(--background);
         border-left: 1px solid var(--border);
-        transition: 0.2s ease-in-out;
+        transition: 0.3s ease-in-out;
         transform: translateX(100%);
     }
 
