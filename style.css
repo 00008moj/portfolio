@@ -482,7 +482,8 @@ footer span {
 
 @media (max-width: 1024px) {
     body {
-        padding: 0 min(5rem, 95%);
+        padding: 0 5rem;
+        padding-top: 4rem;
     }
 
     .hero-name {
@@ -522,6 +523,7 @@ footer span {
 @media (max-width: 600px) {
     body {
         padding: 0 1.25rem;
+        padding-top: 4rem;
     }
 
     nav h3 {
