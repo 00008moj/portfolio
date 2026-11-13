@@ -63,7 +63,8 @@ html {
 body {
     min-height: 100vh;
     min-height: 100dvh;
-    padding: 0 min(300px, 95%);
+    padding: 0 300px;
+    padding-top: 4rem;
     background-color: var(--background);
     color: var(--primary-text);
     transition:
@@ -87,18 +88,11 @@ section {
     border-bottom: 1px solid var(--border);
 }
 
-.project-section {
-    border-bottom: none;
-}
-
-.project-body {
-    padding: 3rem 300px 0;
-}
-
 nav {
     z-index: 1000;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     height: 4rem;
     width: 100%;
     display: flex;
