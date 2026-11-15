@@ -73,6 +73,14 @@ body {
         border-color 0.2s ease-out;
 }
 
+.project-body {
+    padding-top: 0;
+}
+
+.project-body header {
+    padding-top: 0;
+}
+
 header {
     min-width: 100%;
     padding-top: 3rem;
@@ -310,6 +318,10 @@ nav a:hover {
     padding: 0.3rem 0.9rem;
     border: 1px solid var(--border);
     border-radius: 0.3rem;
+}
+
+.project-body .project-section {
+     margin-top: 0;
 }
 
 .project-container {
