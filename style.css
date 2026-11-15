@@ -77,10 +77,7 @@ body * {
         border-color 0.2s ease-out;
 }
 
-.project-body {
-    padding-top: 0;
-}
-
+.project-body,
 .project-body header {
     padding-top: 0;
 }
@@ -504,6 +501,11 @@ footer span {
         padding-top: 4rem;
     }
 
+    .project-body,
+    .project-body header {
+        padding-top: 0;
+    }
+
     .hero-name {
         font-size: 3rem;
     }
@@ -542,6 +544,11 @@ footer span {
     body {
         padding: 0 1.25rem;
         padding-top: 4rem;
+    }
+
+    .project-body,
+    .project-body header {
+        padding-top: 0;
     }
 
     nav h3 {
