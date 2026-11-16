@@ -387,6 +387,7 @@ nav a:hover {
 .contact-text p {
     color: var(--secondary-text);
     line-height: 1.4rem;
+    text-wrap: balance;
 }
 
 .prefer-email {
@@ -663,6 +664,12 @@ footer span {
 
     .contact-content {
         flex-direction: column;
+    }
+
+    .contact-text p {
+        color: var(--secondary-text);
+        line-height: 1.4rem;
+        text-wrap: wrap;
     }
 
     .contact-form h1 {
