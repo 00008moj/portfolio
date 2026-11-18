@@ -83,15 +83,12 @@ body * {
 }
 
 header {
-    min-width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--border);
 }
 
 section {
-    min-width: 100%;
-    max-width: 700px;
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--border);
@@ -114,14 +111,14 @@ nav {
     transition: 0.2s ease-out;
 }
 
-nav h3 {
+.name {
     font-family: "Geist Pixel";
     font-size: 1rem;
     font-weight: 400;
     color: var(--primary-text);
 }
 
-nav h3:hover {
+.name:hover {
     color: var(--secondary-text);
 }
 
@@ -149,7 +146,6 @@ nav a:hover {
 .dark-mode-button {
     font-family: "Geist Pixel";
     color: var(--secondary-text);
-    text-decoration: none;
     border: none;
     background-color: transparent;
     font-size: 1rem;
@@ -164,7 +160,6 @@ nav a:hover {
 .text-content {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -320,10 +315,6 @@ nav a:hover {
     padding: 0.3rem 0.9rem;
     border: 1px solid var(--border);
     border-radius: 0.3rem;
-}
-
-.project-body .project-section {
-     margin-top: 0;
 }
 
 .project-container {
@@ -527,14 +518,16 @@ footer span {
     .about-me-education {
         width: 100%;
     }
-
-    .project-body {
-        padding: 3rem 1rem 0;
-    }
 }
 
 
 @media (max-width: 768px) {
+
+    .project-body,
+    .project-body header {
+        padding-top: 0;
+    }
+    
     .contact-content {
         flex-wrap: wrap;
     }
